@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: knqyf263.github.io/trivy-repo/deb
+Label: github.io/knqyf263
+Codename: bionic
+Date: Tue, 07 May 2019 06:52:41 UTC
+Architectures: i386 amd64
+Components: main
+Description: Trivy repository
+MD5Sum:
+ ddc4db6ece4538455a341f838fd3080b 490 main/binary-i386/Packages
+ 709f46d1e9453f2d3781f1c0d7165a40 374 main/binary-i386/Packages.gz
+ cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
+ 2657ac50710d933ab900d63fa59239d0 492 main/binary-amd64/Packages
+ f4d091ddb58e30f3eec7a8b175ef210e 372 main/binary-amd64/Packages.gz
+ fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
+SHA1:
+ 02670ddd2bc44c892666aafb7b7871104c34feea 490 main/binary-i386/Packages
+ 7cf4c06297a943c8f5a5bfb0384bede6a4161cf6 374 main/binary-i386/Packages.gz
+ e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
+ ac0c75bc5b123aad482c436053b66fcd3037ae58 492 main/binary-amd64/Packages
+ aacb2c64293c48a10e161305f48871141e5a31b2 372 main/binary-amd64/Packages.gz
+ 6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
+SHA256:
+ ea29a87d7acf799d4ad4d00d55d218c2eb743e5a859507c02cb04fc44591583e 490 main/binary-i386/Packages
+ 995c0b82726b12915b32dc0df19cd5a6793cc243b92f52279f6ccbb24494f1b4 374 main/binary-i386/Packages.gz
+ 6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
+ f7a832a3fa2777881df52a1597633a6539a24d18fbfae4bdc0d0c8533595d0b5 492 main/binary-amd64/Packages
+ 088c68d723a0caee5b3af96bf7e0c9ec1a97f36fcb86aa3433a6c39617363b69 372 main/binary-amd64/Packages.gz
+ 3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCAAdFiEELi01Z0YWMshLts1v6dCjYWJ2+mwFAlzRKzkACgkQ6dCjYWJ2
++myy4gv9HXpORTM0B2FqdDpbSy40HBA/dOkKMOS5h/W4dRPQVnN3L1F+SUn2BMGo
+EZKWm4ou3mKk+elrQ8XNoh7gI0T1sFFBZtvENhT2aI04VTxJzKUXIXccJmWYXPOm
+oypkpwsHNalZgHUMz6HCpSgoGQTfpYsI3YelklXxviaEozjLIdaUL53QfKMEFwm+
+nETIGAxH1tfPYyBDzHyec69HYdiePnHLjU20FxtK41spcrYrK3ZdaeU4y+Qi+X2U
+AAkPFOFiO1cE4ucycVNYodgLGm//WfN8TupPIxIcEuLnCj0mKlUV42tCHEYS85QL
+Ui5DpJ3myMDMwk7UmBRD9CkwTaOA1MGh+q2bs+Ezx7PubZJ5xtcNVYKWiEqJwbS4
+nnOjmFJe+Va9nt4z+aiT+K9O80/POvDTi1UOW7uobubesQ8N/OnftHebK0kxTS3t
+pkeumTQ4za9XrOO3400EW6AYcAM40AJ7ZHPGczczVIVr4cdyqA0LkpKMEtgPIGHc
+TM9h4ODV
+=WUco
+-----END PGP SIGNATURE-----
