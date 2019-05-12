@@ -1,17 +1,17 @@
 Package: trivy
-Version: 0.0.9
+Version: 0.0.10
 Architecture: amd64
 Maintainer: Teppei Fukuda <knqyf263@gmail.com>
 Vendor: knqyf263
-Installed-Size: 26168
+Installed-Size: 26224
 Depends: rpm
 Homepage: https://github.com/knqyf263
 Priority: 
 Section: 
-Filename: pool/main/t/trivy/trivy_0.0.9_amd64.deb
-Size: 12302928
-SHA256: 3a8a669d1972146a23f3508c66aa7f40b22becef24ca8e439fec8831a8576971
-SHA1: fbcd52d39c85892c8f06e5416c2b440e732ad701
-MD5sum: f1092656f0a39f4063334843b6dfe65a
+Filename: pool/main/t/trivy/trivy_0.0.10_amd64.deb
+Size: 12329170
+SHA256: ac813567ef4c5979496f7d15404b77911f88a307a434415e794d8413a8465644
+SHA1: 4a33e83d2260247c2ebbb24350ee5e0e680729ae
+MD5sum: 08873d6de9103c64957846dbb54b196a
 Description: A Fast Vulnerability Scanner for Containers
 
