@@ -9,9 +9,9 @@ Homepage: https://github.com/knqyf263
 Priority: 
 Section: 
 Filename: pool/main/t/trivy/trivy_0.0.11_i386.deb
-Size: 12060758
-SHA256: 95d2e944c7cbf2fe946d53207b6a9f0da7c4ecb42972aaf1df154ac0a0c5626a
-SHA1: a9a4bed89249c1e040c6a027862f5436144586d7
-MD5sum: 2ac46fbc65f72c2f195dfb90198e5656
+Size: 12059646
+SHA256: 7ea104a7e33b2bbd37006a43410ac88e9983414739e7f988a3dd0d438a9fe3ca
+SHA1: aa8cb5bb6a3cfcb22c3a05d22857363e522a4557
+MD5sum: 67b1f623309e9acb4f58e81c690157eb
 Description: A Fast Vulnerability Scanner for Containers
 
