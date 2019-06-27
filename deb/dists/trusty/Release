@@ -1,28 +1,28 @@
 Origin: knqyf263.github.io/trivy-repo/deb
 Label: github.io/knqyf263
 Codename: trusty
-Date: Tue, 28 May 2019 07:11:04 UTC
+Date: Thu, 27 Jun 2019 05:40:15 UTC
 Architectures: i386 amd64
 Components: main
 Description: Trivy repository
 MD5Sum:
- ce68e14e96ffb33093475c7ce06ab519 490 main/binary-i386/Packages
- 74aff81ca78590eb218ca9da51d10be7 371 main/binary-i386/Packages.gz
+ 03c2dbaf22cfea54691ef93b418aa6f7 490 main/binary-i386/Packages
+ 602ea19e34b32e1ff017c892642a011f 372 main/binary-i386/Packages.gz
  cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
- ef211c499e470cff7b4f55ba899f4b5d 492 main/binary-amd64/Packages
- 82fd1bef26c486337bdb3d368827cb44 373 main/binary-amd64/Packages.gz
+ b4d7a9d73364edca3290aa29e65ebf5b 492 main/binary-amd64/Packages
+ 7d9b789e93cec9e998d7dcf6a7f7d7bd 373 main/binary-amd64/Packages.gz
  fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
 SHA1:
- 613a320a1f9c626bb67b0466c6c2f5d8dd8f522d 490 main/binary-i386/Packages
- cec0c198cf0147912e4ade3a2320e36c61b8bb33 371 main/binary-i386/Packages.gz
+ 919ac7c2a24c2c5ef0a05190f44cc73f58d885bd 490 main/binary-i386/Packages
+ 4fee23f69a9cad29fbc6630975efefcd44184cf5 372 main/binary-i386/Packages.gz
  e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
- 9a54419c208e3be6de956987dd97b72c4bfb8eda 492 main/binary-amd64/Packages
- 554ebe38e4348a807d89c7c7cf567a236fa753e1 373 main/binary-amd64/Packages.gz
+ 6aefdd6637305dbbaafc0999d2873aa4d103a91e 492 main/binary-amd64/Packages
+ 609b9c6036f358ff611386c6a8732d2f13cb0289 373 main/binary-amd64/Packages.gz
  6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
 SHA256:
- ea11345ce2f7e29fc4c2888aa4f0256773e3d051171145274d2dc657c1f6c7c1 490 main/binary-i386/Packages
- 11a08004553e2f96fa4e39ddab281c20ca2fc0d4f79ac3aff00d307fc98102c4 371 main/binary-i386/Packages.gz
+ d2c9387124cb03a7ee8a5cb6e5adf63cdd47ed27041da0ec357bc31a5e7d6967 490 main/binary-i386/Packages
+ 241e5d1edb61c3bf0ba553055c421267c932d6742c5de95a7f7e58991e2389b5 372 main/binary-i386/Packages.gz
  6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
- 842d56b00973f4923d6020e71ddeb80533acf4e458c54e1b14ecaad8b77abffe 492 main/binary-amd64/Packages
- 3b17a71cdf908b2a4dc33f0049ee9ca190b6a4cbe9c7f43298f7d8db77f7fb2c 373 main/binary-amd64/Packages.gz
+ 7e0aacd048ba7853343cc5c87f3a0b31d9bcd513a40d6b7e1f9adb0466186bad 492 main/binary-amd64/Packages
+ 6791161a2377611b6c8143aaefa2f7baf94a7b498fe9a5caf49ffa235824450f 373 main/binary-amd64/Packages.gz
  3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
