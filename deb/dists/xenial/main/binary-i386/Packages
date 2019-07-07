@@ -1,17 +1,17 @@
 Package: trivy
-Version: 0.1.3
+Version: 0.1.4
 Architecture: i386
 Maintainer: Teppei Fukuda <knqyf263@gmail.com>
 Vendor: knqyf263
-Installed-Size: 23010
+Installed-Size: 22941
 Depends: rpm
 Homepage: https://github.com/knqyf263
 Priority: 
 Section: 
-Filename: pool/main/t/trivy/trivy_0.1.3_i386.deb
-Size: 12099786
-SHA256: 69c0eadd997b5fdff3b5f84d8a35a5ee09129f25ac3c43f854ddfc5853e568fb
-SHA1: 7c131b9043edd9cddde444d0d5d69bf52430132c
-MD5sum: 160a02a8b29b30fb4894f8d5a9ed9725
+Filename: pool/main/t/trivy/trivy_0.1.4_i386.deb
+Size: 12073408
+SHA256: 10418780c93911186e1a9519a01728bf65a37156b2d3c7c237ba5e07c9a49e7f
+SHA1: 448a5ee90f9cb6e92f3634a8821698627c868eeb
+MD5sum: 6d4e7730b44273ecffb970b54229b462
 Description: A Fast Vulnerability Scanner for Containers
 
