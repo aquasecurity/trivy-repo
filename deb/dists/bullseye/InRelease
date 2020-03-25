@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: knqyf263.github.io/trivy-repo/deb
+Label: github.io/knqyf263
+Codename: bullseye
+Date: Wed, 25 Mar 2020 16:38:25 UTC
+Architectures: i386 amd64
+Components: main
+Description: Trivy repository
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
+ cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
+ e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ 6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
+ 6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ 3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEELi01Z0YWMshLts1v6dCjYWJ2+mwFAl57iQEACgkQ6dCjYWJ2
++mwzIgwAtvzQ3QkX6AFYhiRCIiQoUFLgGbrRiJo0VWUx9a2wh+HLe6VD9wJFWV4z
+GLnDL44Ub8crgYDYj4f/3qwhpTFRRBFZX2Qkkt6HDuCKZS50CKjXQz6GpItJkYkr
+cW5JQDg0Y5/cj804OmYSZbKEqVf9vwXBjqURx0b0qS6R8B0paLJzPL/zANx8d2BU
+vv5WrV+FIgHb1nv0h/wokV3SHjZdkK9SdqFw669CU24ncHjPcWt3QQFbfBxYQg9t
+ERvd34ppbjBqvTWDyqv/hBjaIaEslSVqEXWvY1XPLPRMVIGqNRtUtU54udbvtBWz
+x8p9n+X71tog3lez7N/trODY/mK+7bdFvMTKc2hH6VmDuS5gxxlfiVbMBcduv8sS
+vfNKXqJ0PChUBqm0IRqP475U4cGdTM8+SyF1XonwO23JKOAcWJIOy1k3g8sd4iZR
+pCz/1jpjYVpP6vBr9fHo0cp3P2bnlRCC6lI5KVGI6/N5GUkXaiJgwwOthJZHDJ8A
+95FQ+dJU
+=iKGc
+-----END PGP SIGNATURE-----
