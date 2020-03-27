@@ -10,8 +10,8 @@ Priority:
 Section: 
 Filename: pool/main/t/trivy/trivy_0.5.3_i386.deb
 Size: 8317802
-SHA256: 43974590cb68a5bdbe65f4ecc000c30883e9c8a163caf506159ffb201e9a2591
-SHA1: efd7cbd5d1755fea1d0f9c2c45cc96bd0bbccfd9
-MD5sum: cc02b305312855cec7574d4bb42d032c
+SHA256: 142026af322666d78cd3d159829499daee5cdeea1d5daa884ac4ccc3ce263072
+SHA1: 2e9d0be070172713d78b46da936ac64d9bb2c8f6
+MD5sum: b5ec503f41dea0e20e66fba65d8166e8
 Description: A Fast Vulnerability Scanner for Containers
 
