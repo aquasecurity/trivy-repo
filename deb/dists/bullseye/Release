@@ -1,28 +1,28 @@
 Origin: knqyf263.github.io/trivy-repo/deb
 Label: github.io/knqyf263
 Codename: bullseye
-Date: Thu, 30 Jul 2020 19:08:53 UTC
+Date: Wed, 05 Aug 2020 13:19:11 UTC
 Architectures: i386 amd64
 Components: main
 Description: Trivy repository
 MD5Sum:
- 05cf1648f39de9da0c8b91099092842c 499 main/binary-i386/Packages
- aa6f3ebb6008bc0b75dc45082e137105 377 main/binary-i386/Packages.gz
+ bf1c9e16b9a97c1433b02f5a1cd10c0a 499 main/binary-i386/Packages
+ e20e64b31b0170d79fc3b523deaba44a 377 main/binary-i386/Packages.gz
  cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
- 94aad6d2a2f1787fc9201e7f1116080d 501 main/binary-amd64/Packages
- ed1ebeb2d2b9cbb79243de1ff66bc39a 378 main/binary-amd64/Packages.gz
+ 55392270ccf300f9f671dbfb0ef0ffc0 501 main/binary-amd64/Packages
+ 0e9b8008e3a8fb241fc6777a1bc7b017 380 main/binary-amd64/Packages.gz
  fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
 SHA1:
- 96ec0714339e0b07d8670fc7cc4d7b924e9c0f77 499 main/binary-i386/Packages
- c79ed7e0b331bce76d133cfcf12b99b7de3d87d5 377 main/binary-i386/Packages.gz
+ c70ef3727e04b22a75283e8f63c988929e806f0b 499 main/binary-i386/Packages
+ 66ba9095aa84f3e12cb5c1305b0b90a74c1fd8ae 377 main/binary-i386/Packages.gz
  e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
- 4092b5d70e69d23dbd67021685a780a83e7f694f 501 main/binary-amd64/Packages
- 7d707409c2a2f3d2bf3c2a80287c9615511d8c92 378 main/binary-amd64/Packages.gz
+ b24daf14f9d061583643b71b691556349980915f 501 main/binary-amd64/Packages
+ 7b50c75674e03dcf1ec23169d3248dba719e66fe 380 main/binary-amd64/Packages.gz
  6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
 SHA256:
- 8c277da6b894a39eabb3298ab1c4194be3f1cc5649882b465b1b20cd87f0b876 499 main/binary-i386/Packages
- 5b5e356932992d9f60434d6113fda95f7cc18bdf8c6cabbcaf118f880d1a2711 377 main/binary-i386/Packages.gz
+ 3f1c1b82dc185da72cf3e9e352a9e381730443186ea644650a57650295f284f2 499 main/binary-i386/Packages
+ 6a78c68a4ac902bdd8bbc0cd712d98d042973a4c0a6e6e5f44dbde0154bee7e5 377 main/binary-i386/Packages.gz
  6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
- da9fb6777c239c84f04faa4ce9e0077a2fa3118cbf95572eebb959585ca8d54f 501 main/binary-amd64/Packages
- c09a914f75e9601831c45d275645bca4b4d0e1e9ca6a1fad043f801dcdc97e6e 378 main/binary-amd64/Packages.gz
+ c6277261739018bf76dc962dfb6cebdd06570d8d48945a584db05b75310bee8d 501 main/binary-amd64/Packages
+ 5bf2cc604b01199c0eae61f9efbba2f54443d84abf8b66d8dc68aca8df8c04b1 380 main/binary-amd64/Packages.gz
  3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
