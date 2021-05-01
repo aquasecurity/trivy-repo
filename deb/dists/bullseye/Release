@@ -1,28 +1,28 @@
 Origin: knqyf263.github.io/trivy-repo/deb
 Label: github.io/knqyf263
 Codename: bullseye
-Date: Fri, 30 Apr 2021 05:07:03 UTC
+Date: Sat, 01 May 2021 11:27:51 UTC
 Architectures: i386 amd64
 Components: main
 Description: Trivy repository
 MD5Sum:
- bcca1a27dc70031ad130bd4bbf3a4b82 486 main/binary-i386/Packages
- b8ef05fc76ff1592a5d21035c036e99e 370 main/binary-i386/Packages.gz
+ cc2c4f3e2556fbf57fe0f0a5708a9495 486 main/binary-i386/Packages
+ f260bd86041757248b5b80795aab2ab9 368 main/binary-i386/Packages.gz
  cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
- c3100872cec66f88d8d0285347e0bcec 489 main/binary-amd64/Packages
- 2444c71538ad64fcb9f04958ec8b5d86 370 main/binary-amd64/Packages.gz
+ 62d6f82c11cbf77ad629701f024e5838 489 main/binary-amd64/Packages
+ 5a48d396381e59c0aad9e13804ccb93b 371 main/binary-amd64/Packages.gz
  fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
 SHA1:
- c68ab859e51e966d6554bc0537b67a0c0d70baad 486 main/binary-i386/Packages
- bab31fbefa0bb432d62b1cb0e57a4a1355775e16 370 main/binary-i386/Packages.gz
+ fbaae11a34707380b2b0afd0bf5129cb5ee155f7 486 main/binary-i386/Packages
+ 976daabd823d8cc5602ee3f0bc621771a38f270e 368 main/binary-i386/Packages.gz
  e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
- acf4367fb20dbfd548c4bc026a7a4ba3dde47ccf 489 main/binary-amd64/Packages
- 4d4bcd22d40cb2567c51b565aa630d56f9750bd8 370 main/binary-amd64/Packages.gz
+ 6bc166065295a02ee0331446520e58e818a90c7e 489 main/binary-amd64/Packages
+ 270146224bae6052f444b5a56bf7a1ba73a46719 371 main/binary-amd64/Packages.gz
  6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
 SHA256:
- 976e2b379f19b4e08b649cab1074e8312b10fe9ccfce4b19bdc545aa85677dd2 486 main/binary-i386/Packages
- bdb09f80a3fbed829fc3d41a8ac4e58fd1cc4e41a7b9797071f54d8c6878e286 370 main/binary-i386/Packages.gz
+ eb08114587ef9ad8e3c95e341d180947cd73dcfeea230978499161763513d975 486 main/binary-i386/Packages
+ 5ddfdf034ec00c5f58037c6b7c233f8627f61e6ac0396fa68b3d9bdfe439a99b 368 main/binary-i386/Packages.gz
  6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
- 42abaedf03340c0b98ec213ce65aad415fd3482f1afd12e7dba7ce333ae0457c 489 main/binary-amd64/Packages
- ed23b9851fc6dfc232c092b77eddd9630d1cb062c6f9ee2aab83cafa7747950f 370 main/binary-amd64/Packages.gz
+ 8153be2853e8d19aecf0cc33bce0f4397878539c568b5dce162bae6f8d26a7bf 489 main/binary-amd64/Packages
+ fab76b3c171cfb84e296524ec94e66d08e4e71f4f3e67d223d03c15512d7aa1a 371 main/binary-amd64/Packages.gz
  3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
