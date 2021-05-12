@@ -4,42 +4,42 @@ Hash: SHA512
 Origin: knqyf263.github.io/trivy-repo/deb
 Label: github.io/knqyf263
 Codename: focal
-Date: Sat, 01 May 2021 11:27:52 UTC
+Date: Wed, 12 May 2021 10:51:16 UTC
 Architectures: i386 amd64
 Components: main
 Description: Trivy repository
 MD5Sum:
- cc2c4f3e2556fbf57fe0f0a5708a9495 486 main/binary-i386/Packages
- f260bd86041757248b5b80795aab2ab9 368 main/binary-i386/Packages.gz
+ 313e97255432fac326a758cf51369954 486 main/binary-i386/Packages
+ 0295d8fd91f1dc090bac4e2f8890fde8 371 main/binary-i386/Packages.gz
  cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
- 62d6f82c11cbf77ad629701f024e5838 489 main/binary-amd64/Packages
- 5a48d396381e59c0aad9e13804ccb93b 371 main/binary-amd64/Packages.gz
+ 8beff76f6e660089853e1eb153cda36c 489 main/binary-amd64/Packages
+ 2fbfaa6938db10a7a0b21f9679202f74 372 main/binary-amd64/Packages.gz
  fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
 SHA1:
- fbaae11a34707380b2b0afd0bf5129cb5ee155f7 486 main/binary-i386/Packages
- 976daabd823d8cc5602ee3f0bc621771a38f270e 368 main/binary-i386/Packages.gz
+ a98cb0b78ac2b15aa8e75332568b5313d0389773 486 main/binary-i386/Packages
+ bfa4b64a6103feb3aa26fdab57b06ac39d7c5f1b 371 main/binary-i386/Packages.gz
  e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
- 6bc166065295a02ee0331446520e58e818a90c7e 489 main/binary-amd64/Packages
- 270146224bae6052f444b5a56bf7a1ba73a46719 371 main/binary-amd64/Packages.gz
+ f14162203e5d9d7c32acde758cc7d7c027b823db 489 main/binary-amd64/Packages
+ abbf31ba00c03a77e4ff376b702e00e9dc6a1c9d 372 main/binary-amd64/Packages.gz
  6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
 SHA256:
- eb08114587ef9ad8e3c95e341d180947cd73dcfeea230978499161763513d975 486 main/binary-i386/Packages
- 5ddfdf034ec00c5f58037c6b7c233f8627f61e6ac0396fa68b3d9bdfe439a99b 368 main/binary-i386/Packages.gz
+ 5ffe347098c2fad9495f034bc6af736cb056c2baba67e05f3353312968ad3fe6 486 main/binary-i386/Packages
+ 3fb6e1ca663e09caea0de253a5dc1ad415339cc2959b9d651a9daef33d01b069 371 main/binary-i386/Packages.gz
  6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
- 8153be2853e8d19aecf0cc33bce0f4397878539c568b5dce162bae6f8d26a7bf 489 main/binary-amd64/Packages
- fab76b3c171cfb84e296524ec94e66d08e4e71f4f3e67d223d03c15512d7aa1a 371 main/binary-amd64/Packages.gz
+ 5f9dc291e72ca4529636bd4d4937d071c4b44a009e349a4b56880e9700b5003c 489 main/binary-amd64/Packages
+ 04adaeef2add6a405b99ddab4622bc84cf629d3bd9d46c7ffcbeccd6484cb3bd 372 main/binary-amd64/Packages.gz
  3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEELi01Z0YWMshLts1v6dCjYWJ2+mwFAmCNOzgACgkQ6dCjYWJ2
-+mwacwv+Lqr2mQkGL2o5g2YfdUhtEIHKI6IMerrokjwWcBQC+dK1NWJs6kCLgJcJ
-lbrNz6hFDty9Mf+NsOl9IOiRuhcMq6rhhWn0YKFaM9FASH6P696MxP72httWiVAw
-T8ItBq+/QYeiY9cOYX6DL1iFtlfibu1wbmf9JPcM1D0V5LGbKvyyGs8GNSOcelnb
-Kefd9h1K651Za39lYl5BCUzNWFjxVLUUtL7271B3cGdTQLj4wKCWIlg5AQVEaFlL
-pxJv5O7m5Xc/oE/SlLpojbXkYTlqOb3h5X6RWtdKi4TGnAqSc/Tz/IEi2g5qcVdp
-icQ0GATFFhJeRDP+yWBjYlFT81XDS2lsOngDCURccLueZ7+2phfKgK50gneRsLSE
-ZGzhWWHob4D28VQpn/6Xd5VlI5L1aRXxx2d96/DXxUwzXy75vzdSwq5GmLI5zlB2
-4JvaiVfEmK1vLZi3E6jN120iqWE7PIoSq37ImgZpjmtdf8s5Wynm4Fem26iEnAn9
-2C6t38GJ
-=elmA
+iQGzBAEBCgAdFiEELi01Z0YWMshLts1v6dCjYWJ2+mwFAmCbsyQACgkQ6dCjYWJ2
++mzDFwv8D8X8OuwDJ09TuXvhaw51qxyg+EsgNko57P0zx4Zalg+Zn1Dr/S0j1xQk
+WQv5fO9p4EEPIwRIKUpsmpS7Ypis7C1T5a+20+nvbVv54cfyn9KjkI3znBE05HOY
+avKWWznAaoWZLePTBL3M3LAOB73HRnWJ+5MDMNKbfjWk/VXEUc8/tJc8ycxwMeQA
+E4ZDXV0viNBW6S+/EFsRe7A/Ln3izkrHGu4+VnA+PLQbIjrfI5wDm1/bt5I3wWkh
+TqqFv2JkEj+tnpiK+XBls1YuD8T2XUoLs/zZ+CXuqKM+EUN7nJVppZo+HnPn2O8N
+7PMO5Tt/laF5x2oSDF4MezmOQKnVsicxPENN8AvLm+8ox3FTwXxDDY60H4WM8wIV
+jbVt6SFh/38shuD6/IxicEg5q+DgLdhxcFINz+6la8BuiQzOB9QL4zLrirBSR1MW
+EMl1tSPKWj4MAKd40QULfdO7Fpfdk/srY9bucU+7UM4nqLj6os9GFFJM+AJ+3qyB
+ZJ6SSSbp
+=i9JN
 -----END PGP SIGNATURE-----
