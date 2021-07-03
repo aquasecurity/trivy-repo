@@ -22,8 +22,21 @@ $ sudo vim /etc/yum.repos.d/trivy.repo
 [trivy]
 name=Trivy repository
 baseurl=https://aquasecurity.github.io/trivy-repo/rpm/releases/$releasever/$basearch/
-gpgcheck=0
+gpgcheck=1
 enabled=1
+```
+
+Download and Import RPM GPG key
+
+```
+$ wget https://aquasecurity.github.io/trivy-repo/rpm/RPM-GPG-KEY-trivy
+$ sudo rpm --import RPM-GPG-KEY-trivy
+```
+
+Install  
+
+```
 $ sudo yum -y update
 $ sudo yum -y install trivy
 ```
+
