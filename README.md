@@ -29,7 +29,7 @@ enabled=1
 Download and Import RPM GPG key
 
 ```
-$ wget https://aquasecurity.github.io/trivy-repo/rpm/RPM-GPG-KEY-trivy
+$ curl -LJO https://aquasecurity.github.io/trivy-repo/rpm/RPM-GPG-KEY-trivy
 $ sudo rpm --import RPM-GPG-KEY-trivy
 ```
 
