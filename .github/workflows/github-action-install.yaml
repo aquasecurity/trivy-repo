@@ -1,0 +1,40 @@
+name: Install
+on: [push]
+jobs:
+  install-ubuntu:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        image: [
+          "ubuntu:20.04",
+          "ubuntu:18.04",
+          "ubuntu:16.04",
+          "ubuntu:14.04",
+        ]
+
+    container:
+      image:  ${{ matrix.image }}
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v1
+      - run: ./install_deb.sh
+
+  install-debian:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        image: [
+          "debian:10",
+          "debian:9",
+          "debian:8",
+          "debian:7",
+        ]
+
+    container:
+      image:  ${{ matrix.image }}
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v1
+      - run: ./install_deb.sh
