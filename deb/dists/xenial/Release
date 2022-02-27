@@ -1,37 +1,37 @@
 Origin: knqyf263.github.io/trivy-repo/deb
 Label: github.io/knqyf263
 Codename: xenial
-Date: Wed, 23 Feb 2022 12:45:53 UTC
+Date: Sun, 27 Feb 2022 16:06:20 UTC
 Architectures: i386 amd64 arm64
 Components: main
 Description: Trivy repository
 MD5Sum:
- b7dd8c445acdfa12c1e35dfa5bd85d68 487 main/binary-i386/Packages
- e637117fd162c36dc162308bde20cddf 368 main/binary-i386/Packages.gz
+ 885164fd013aaa593dac96163f129720 487 main/binary-i386/Packages
+ b53ba46017560a8feb1c3c9527d65565 368 main/binary-i386/Packages.gz
  cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
- cd8211479a7394d0309ff96edb498f6f 489 main/binary-amd64/Packages
- 47f0ba3d1d2264da9da2e77fcc6f7ed5 369 main/binary-amd64/Packages.gz
+ a46476e551e83c0643fb93f5904e8606 489 main/binary-amd64/Packages
+ fb116b1bd30f341630b9a8edd26ae71e 371 main/binary-amd64/Packages.gz
  fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
- fa3310d4c3b61c99c0df2e7861d86b84 489 main/binary-arm64/Packages
- c481072d0da95442a55422ea567c167d 371 main/binary-arm64/Packages.gz
+ 3a79328e8bc88a4704a8436991832b3f 489 main/binary-arm64/Packages
+ d12778e6cc6ae91ee844fcbf10c64f54 370 main/binary-arm64/Packages.gz
  a1076e657daa7a7e705b44cca67345fe 134 main/binary-arm64/Release
 SHA1:
- b6d64cb3f3e6b9187aef68133d486836138825b9 487 main/binary-i386/Packages
- 3014df084158e8da2b972ee2d6b751b9dede3e6d 368 main/binary-i386/Packages.gz
+ 10aad92116d2bcbc4976ed0dde0c5268bac3e2f4 487 main/binary-i386/Packages
+ c0c6da7b448df85d95711a335fcafb83780be248 368 main/binary-i386/Packages.gz
  e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
- ad3b5efe0c1b97f7ab1edacd1047801f489b612f 489 main/binary-amd64/Packages
- 4c33bb84ed7a8daa8b232a16c17e1efeed9efb74 369 main/binary-amd64/Packages.gz
+ c6a8bd380db1486c18a672e4cfb50329a8b0738a 489 main/binary-amd64/Packages
+ f56ec1752b51fad26a191f369981096b87665f5f 371 main/binary-amd64/Packages.gz
  6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
- e612b2e19eb638adac6717ef200b89593ee96d20 489 main/binary-arm64/Packages
- 09e49b0047915c2b5b028a92cf57cc875ce5a89d 371 main/binary-arm64/Packages.gz
+ b485eb833c7c14f752782d349bea01f768c0e5b4 489 main/binary-arm64/Packages
+ 7f998ec6d4d2db3ff54989cdc5674bef463cdd1c 370 main/binary-arm64/Packages.gz
  c3a5a6ffb7392a3e607d6d256f874a57ea5f1d56 134 main/binary-arm64/Release
 SHA256:
- e5e058be7d5b1c99228ad045c7f629550fe9933d5be76da631d47c3911d24f18 487 main/binary-i386/Packages
- 1aeefdea16a1b62d8deb0cc7aac4443b318a38575da7fee034c87977f9e52122 368 main/binary-i386/Packages.gz
+ 6c61ca17a5efb783c68794dcff5a267219564655e56a31c3d3ee62308a7168e1 487 main/binary-i386/Packages
+ 1e345c99050cea64cc56aa902f2287ed18475d3a0688520a8ad3c5a1466fbcae 368 main/binary-i386/Packages.gz
  6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
- 437d0a6888565794750195c41aa0a8e2e52ec26c312c61625e77fc65241a07e7 489 main/binary-amd64/Packages
- fcd5b43cc04b446a7afd74c2fd89880d284787a860593174d71036188fdaf1e2 369 main/binary-amd64/Packages.gz
+ 1f6c3a358eaba7f48ee33880b78353066d3991cac9b12fbe775fcba42ef1c389 489 main/binary-amd64/Packages
+ c8971ee6b406eed38708f91ffe35bd982de7a6bc906fa57c27d6bdf441e468b8 371 main/binary-amd64/Packages.gz
  3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
- 1842727b1560459306b20b024aa275eb38a759eae434c0602457eb76204c5f44 489 main/binary-arm64/Packages
- fa5c8a7667c9a7597706faf2b68c42dbdbe86e3a2c6285308e2dbbb779c3f702 371 main/binary-arm64/Packages.gz
+ bf3efbe702bb87dfbd30cd6b0a94268b83ae05136c4bff9e52ca1d420eeedab5 489 main/binary-arm64/Packages
+ 56bb3802d80bd51a94c4d0bd3eb7527ee4cf48653e9825280abee3454e3ce618 370 main/binary-arm64/Packages.gz
  24e35836d026cc2c006bedf1848aa1f093217916608227fbb7facb6e90048d5a 134 main/binary-arm64/Release
