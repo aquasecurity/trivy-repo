@@ -1,5 +1,21 @@
 Origin: knqyf263.github.io/trivy-repo/deb
 Label: github.io/knqyf263
+Codename: jammy
+Architectures: i386 amd64 arm64
+Components: main
+Description: Trivy repository
+SignWith: 2E2D3567461632C84BB6CD6FE9D0A3616276FA6C
+
+Origin: knqyf263.github.io/trivy-repo/deb
+Label: github.io/knqyf263
+Codename: impish
+Architectures: i386 amd64 arm64
+Components: main
+Description: Trivy repository
+SignWith: 2E2D3567461632C84BB6CD6FE9D0A3616276FA6C
+
+Origin: knqyf263.github.io/trivy-repo/deb
+Label: github.io/knqyf263
 Codename: wheezy
 Architectures: i386 amd64 arm64
 Components: main
