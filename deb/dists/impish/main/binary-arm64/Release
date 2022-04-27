@@ -1,0 +1,5 @@
+Component: main
+Origin: knqyf263.github.io/trivy-repo/deb
+Label: github.io/knqyf263
+Architecture: arm64
+Description: Trivy repository
