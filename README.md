@@ -18,14 +18,22 @@ CODE_NAME: wheezy, jessie, stretch, buster, trusty, xenial, bionic
 Add repository setting
 
 ```
-$ sudo vim /etc/yum.repos.d/trivy.repo
+$ sudo tee /etc/yum.repos.d/trivy.repo << 'EOF'
 [trivy]
 name=Trivy repository
 baseurl=https://aquasecurity.github.io/trivy-repo/rpm/releases/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://aquasecurity.github.io/trivy-repo/rpm/public.key
-
+EOF
+```
+Using `yum`:
+```
 $ sudo yum -y update
 $ sudo yum -y install trivy
+```
+Using `dnf`:
+```
+$ sudo dnf -y update
+$ sudo dnf -y install trivy
 ```
