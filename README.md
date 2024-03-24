@@ -11,7 +11,18 @@ $ sudo apt-get update
 $ sudo apt-get install trivy
 ```
 
-CODE_NAME: wheezy, jessie, stretch, buster, trusty, xenial, bionic
+`CODE_NAME` can be one of the following supported versions
+
+code name | version
+--------- | -------
+focal     | Ubuntu 20.04
+bionic    | Ubuntu 18.04
+xenial    | Ubuntu 16.04
+trusty    | Ubuntu 14.04
+buster    | Debian 10
+stretch   | Debian 9
+jessie    | Debian 8
+wheezy    | Debian 7
 
 ## RHEL/CentOS
 
