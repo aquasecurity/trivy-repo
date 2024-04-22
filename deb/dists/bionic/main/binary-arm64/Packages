@@ -1,15 +1,15 @@
 Package: trivy
-Version: 0.50.1
+Version: 0.50.2
 Architecture: arm64
 Maintainer: Teppei Fukuda <knqyf263@gmail.com>
 Installed-Size: 191443
 Homepage: https://github.com/aquasecurity
 Priority: optional
 Section: 
-Filename: pool/main/t/trivy/trivy_0.50.1_arm64.deb
-Size: 49932942
-SHA256: 514d3ef8e3e7cb0dc258c039f034a467268eafb6c6e55709987f8703e49d3df6
-SHA1: 3db8cd392d3a7f2ce36fcf8319ada052c466d793
-MD5sum: 6aa12c70a68370474c1ab65d4a5bb09f
+Filename: pool/main/t/trivy/trivy_0.50.2_arm64.deb
+Size: 49931276
+SHA256: 13ef204f11f5f57404076017cfaf5e1a8339d8ab8adcc59a83239afebc97060d
+SHA1: e82e144c02e5f28e7dc77024c3d7b113031fd16d
+MD5sum: 05e2eb2a569fba8873d0eac83834fad0
 Description: A Fast Vulnerability Scanner for Containers
 
