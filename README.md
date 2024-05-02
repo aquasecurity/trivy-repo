@@ -4,14 +4,12 @@ deb/rpm repository for Trivy
 ## Debian/Ubuntu
 
 ```
-$ sudo apt-get install apt-transport-https
-$ wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
-$ echo deb https://aquasecurity.github.io/trivy-repo/deb [CODE_NAME] main | sudo tee -a /etc/apt/sources.list
+$ apt-get install wget apt-transport-https gnupg
+$ wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+$ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb common main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
 $ sudo apt-get update
 $ sudo apt-get install trivy
 ```
-
-CODE_NAME: wheezy, jessie, stretch, buster, trusty, xenial, bionic
 
 ## RHEL/CentOS
 
