@@ -1,37 +1,37 @@
 Origin: aquasecurity.github.io/trivy-repo/deb
 Label: github.io/aquasecurity
 Codename: bionic
-Date: Mon, 22 Apr 2024 14:19:56 UTC
+Date: Fri, 03 May 2024 12:47:31 UTC
 Architectures: i386 amd64 arm64
 Components: main
 Description: Trivy repository
 MD5Sum:
- 786ee68753b3da240c6f9bac46c0d3f3 475 main/binary-i386/Packages
- 946d6fca18550cbd0d1f895a74023e28 368 main/binary-i386/Packages.gz
+ 9e9ddf3412cdaa5d265a7eb843b67ba4 475 main/binary-i386/Packages
+ 34e05203f9c7e0fc93f4003ce306266a 368 main/binary-i386/Packages.gz
  cb74fcbcce240dee2da21cb01d6a76b3 133 main/binary-i386/Release
- 441820afd27fe9f946f5d86d884811c3 477 main/binary-amd64/Packages
- 393efc0986059279bc158825441df855 367 main/binary-amd64/Packages.gz
+ 7dfaae2c3cceff69cda4f4dfc631b84f 477 main/binary-amd64/Packages
+ 8b18365613ff097f9ca89a71e5993876 369 main/binary-amd64/Packages.gz
  fc0d8d063c75a4c7df4479d3e1448675 134 main/binary-amd64/Release
- 80176de702c4738cfe5a22d862dbb066 477 main/binary-arm64/Packages
- f6808bc16bab29ca220cd348eed61e8d 369 main/binary-arm64/Packages.gz
+ 72dc7fa0370717031e5b62e609f13113 477 main/binary-arm64/Packages
+ 6f1561944ef2ebe04b7e33c3ad40c5dc 365 main/binary-arm64/Packages.gz
  a1076e657daa7a7e705b44cca67345fe 134 main/binary-arm64/Release
 SHA1:
- 71ac4563cc30d5ddae4e84e3a7ec0641ebb4bade 475 main/binary-i386/Packages
- 3dcf87b5c5abbb868fce530dcc5e5e8ab83caa29 368 main/binary-i386/Packages.gz
+ cc5d518247468cf0c054e6438e363523e6728e06 475 main/binary-i386/Packages
+ c529412a110d58a91a83e7c54e208833fb7b1693 368 main/binary-i386/Packages.gz
  e0b1fe603b66cc8a6058bff840d95f25f7e82262 133 main/binary-i386/Release
- 40aa53a9013a5abff08b9fcde8c00d4792da8875 477 main/binary-amd64/Packages
- 935432a111bc2ef414db3f596703ea6a2c689949 367 main/binary-amd64/Packages.gz
+ b40037b768726fa4f7711dcc42c10f188846a694 477 main/binary-amd64/Packages
+ b17e8599eeb089c5dbd1ea2c154af0d1abd289cf 369 main/binary-amd64/Packages.gz
  6e5d26f013d0004b170fc61120ad20fb40741edc 134 main/binary-amd64/Release
- dce3ea5ca6273f540ae7e6681bc27b060e406645 477 main/binary-arm64/Packages
- 0ef13709958970dfc75791601e8f26720c3b1f06 369 main/binary-arm64/Packages.gz
+ 52024f85a7b333227c23868505245cdebfbc6ddd 477 main/binary-arm64/Packages
+ bf480569f9b653573df95fedeec03d55d62631af 365 main/binary-arm64/Packages.gz
  c3a5a6ffb7392a3e607d6d256f874a57ea5f1d56 134 main/binary-arm64/Release
 SHA256:
- 2b3ff6742eae19b14cbfa70e88d50322242622e374dbaf63f9219ccd3c581caa 475 main/binary-i386/Packages
- cffe38967474e086573fdb2f4623772eee8b60eb0437fa8dc6d04c57169e96e1 368 main/binary-i386/Packages.gz
+ 0804dcb6767b291bbae394954e13f996f528f6c320e13ce9da2c7211e9f89560 475 main/binary-i386/Packages
+ ccd8b9dad2ee766e5d9311a088a072e37ea59abe68055bfb6b060fefa182c1af 368 main/binary-i386/Packages.gz
  6d118db6c4eb67c2471f84de4f44f01f79bc6de87a978fa05a6b3e95e041c573 133 main/binary-i386/Release
- f2ac4a9e6366f6417771657a82349f8b15dda72356c38e723349b352a590549d 477 main/binary-amd64/Packages
- 8f7f61e14338561636e0028626e3c37f1dc15f033ba350b52646a52cde4073de 367 main/binary-amd64/Packages.gz
+ 1c95968d8699df0bf4aa486441fbe3f99af0d07ddd427dfd4e89083ac76d3c53 477 main/binary-amd64/Packages
+ 76ef94ec40a5c530e9fc8058e7ef6e03070bc160cfd7383ac69df962e8c6ef38 369 main/binary-amd64/Packages.gz
  3bc16ce39561e34e127476bb470d94843b389ed49673eb32344b353b40ab77f7 134 main/binary-amd64/Release
- 17e2fe26caaddfcadb1af3b6f9ba784d1b8d3c5706de369ceea87195a0b3e1c7 477 main/binary-arm64/Packages
- eb9ee43cc57b5cc885a92b9b03888652fb58060eba0f0b7592d79a311f117546 369 main/binary-arm64/Packages.gz
+ 5a72c78452c930b1783f3063b9ec0348c4876a10b90619661d9c940b53a30496 477 main/binary-arm64/Packages
+ 6408260bba43d02f9afb18ac70f8b6e80c62ea563648aa8ba22fa7afc99d3db9 365 main/binary-arm64/Packages.gz
  24e35836d026cc2c006bedf1848aa1f093217916608227fbb7facb6e90048d5a 134 main/binary-arm64/Release
