@@ -5,8 +5,8 @@ deb/rpm repository for Trivy
 
 ```
 $ sudo apt-get install wget apt-transport-https gnupg
-$ wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
-$ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb generic main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+$ wget -qO - https://get.trivy.dev/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+$ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://get.trivy.dev/deb generic main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
 $ sudo apt-get update
 $ sudo apt-get install trivy
 ```
@@ -22,7 +22,7 @@ name=Trivy repository
 baseurl=https://aquasecurity.github.io/trivy-repo/rpm/releases/$basearch/
 gpgcheck=1
 enabled=1
-gpgkey=https://aquasecurity.github.io/trivy-repo/rpm/public.key
+gpgkey=https://get.trivy.dev/rpm/public.key
 EOF
 ```
 Using `yum`:
