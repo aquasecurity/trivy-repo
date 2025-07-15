@@ -19,7 +19,7 @@ Add repository setting
 $ sudo tee /etc/yum.repos.d/trivy.repo << 'EOF'
 [trivy]
 name=Trivy repository
-baseurl=https://aquasecurity.github.io/trivy-repo/rpm/releases/$basearch/
+baseurl=https://get.trivy.dev/rpm/releases/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://get.trivy.dev/rpm/public.key
