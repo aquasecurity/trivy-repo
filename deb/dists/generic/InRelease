@@ -4,51 +4,51 @@ Hash: SHA512
 Origin: aquasecurity.github.io/trivy-repo/deb
 Label: github.io/aquasecurity
 Codename: generic
-Date: Fri, 30 Jan 2026 10:25:11 UTC
+Date: Thu, 05 Feb 2026 13:14:03 UTC
 Architectures: i386 amd64 arm64
 Components: main
 Description: Trivy repository
 MD5Sum:
- 2d1fed6e159604cbb8a6963a1636d85a 475 main/binary-i386/Packages
- 2e0d9bbed363f22a812240b81a9755c3 367 main/binary-i386/Packages.gz
+ 400b888ede43c6535da0418d1724c4f3 475 main/binary-i386/Packages
+ 6ef9863b11ce992d56aa1d35eb779855 369 main/binary-i386/Packages.gz
  1ebcafd3074f837fbbc8ed505702646d 141 main/binary-i386/Release
- e3907edf2152c87303c5f91e6dc6d375 477 main/binary-amd64/Packages
- 6ce57d12b43b7ca95459a4502e1ff4a6 369 main/binary-amd64/Packages.gz
+ 308edf320fb8fcaf8c2504552a6c4f9d 477 main/binary-amd64/Packages
+ 9ac81a8050bb567c518f4ca615d3c25f 366 main/binary-amd64/Packages.gz
  824e42f6b275e3aaa20f89400e2a57cf 142 main/binary-amd64/Release
- b2557a9f74155b29cd744e63f41f3794 477 main/binary-arm64/Packages
- 129722c6534a7d9bb08fe066f67055ae 369 main/binary-arm64/Packages.gz
+ 56db2c360e88e63a07851987335e4847 477 main/binary-arm64/Packages
+ 294b4fd7c946f2add800032cdac7f49a 370 main/binary-arm64/Packages.gz
  b14d524c9a1a144c61c8c2dd22898adb 142 main/binary-arm64/Release
 SHA1:
- bf772ee2b7be60a04bd02789212a95b9cc93d0e7 475 main/binary-i386/Packages
- fbb1e85121aa2e3d08d3154e2e8a0ca241815725 367 main/binary-i386/Packages.gz
+ c0a1497bd2de5af7438b8c05176515b39726b4d6 475 main/binary-i386/Packages
+ a13a6a38bc82abf7d24d7ab0a7ba6213ece90267 369 main/binary-i386/Packages.gz
  1fced0281c7f7617829dce3ec71b8226167f6c51 141 main/binary-i386/Release
- 86630cc1d2592aca87094d9669ae6dec7c26e23c 477 main/binary-amd64/Packages
- 397786dfeb1a9c37ed3b8161316fa057fcd707d2 369 main/binary-amd64/Packages.gz
+ a51a92f6db2a152254cc6c2edc472ca3d06c8d33 477 main/binary-amd64/Packages
+ d110cb7013a52756e3bf43a41710a3d2fba31949 366 main/binary-amd64/Packages.gz
  ebf12139dd4253419e77480daf52716b936e7aed 142 main/binary-amd64/Release
- 3c8e3aab2afe7f3e7bfa59a2b3273f41e0334c8b 477 main/binary-arm64/Packages
- 0a55e36526a6e059d51fff270dfd7907157e1f65 369 main/binary-arm64/Packages.gz
+ eb4dd2b5da43e0ced3cdfadb9349fbd3c2cee955 477 main/binary-arm64/Packages
+ 08b2f5e761feb5dc908d2bad5c1894dee7fe1fe4 370 main/binary-arm64/Packages.gz
  72a9eaf1e37c42631d854b45bdfdeb6db0243e29 142 main/binary-arm64/Release
 SHA256:
- 517976c55cdc3b0445112a7c484fba1eb463b084f733fb490ceb43f76e0933ba 475 main/binary-i386/Packages
- 313b6ce47cbc7c84e05696bcb1fc76323b373d9c2781df0cba059823f40783e3 367 main/binary-i386/Packages.gz
+ 8906be105468d49e3d290ef9f965203e55fb288f1ae81ce889cd6ab3cf1f0be7 475 main/binary-i386/Packages
+ 74c08f1b4805fbeeb6cd42a8c22b55a4a1e41fdc21eb12c6b659b6509cbbf330 369 main/binary-i386/Packages.gz
  f05eefd36b7a51031a7ec72662c4cda37883cc2ac0d059118f5395910e3591aa 141 main/binary-i386/Release
- 01d706912cf76a48124b22850d65a5206384415a673855e5c5f9d798721f8364 477 main/binary-amd64/Packages
- fd933b7ef3ebfc393a68ae7cf5b31668eadb753ffdf14042540df1624b9948d0 369 main/binary-amd64/Packages.gz
+ 25621dc1599a9d1b6a9119660a8f7da7af480f78d5a45ad321bb3f6376cae77c 477 main/binary-amd64/Packages
+ 9e1807f8c2a3c77460c6795f3d28d0eaeadc102cb06c5f03f7439c5ecb2ba806 366 main/binary-amd64/Packages.gz
  651e3d6eeb51a43ebcde90f70ab9547ab92c8650f7a37e3cbd7efe7b4c56c82d 142 main/binary-amd64/Release
- 5803ad4dbf9b1d7030e537c01a3195dc0dc8c562cf5ebd96b78f832e9e7f1fab 477 main/binary-arm64/Packages
- 553c962d12559e060ebb9d417a02a491f1851875d5d362b484eed502e952ad63 369 main/binary-arm64/Packages.gz
+ ec9495aefc478c5d9adf7f56ceacef7c0965632952e3e89315af4a385f716302 477 main/binary-arm64/Packages
+ b7db132c5f83c69a8c16a51ce52c4bc9bed384de61215ad01ca56b7293b2568a 370 main/binary-arm64/Packages.gz
  b010fedc93a99be798db9dfa03bf5618f03dc8fbd96db0c73e4d0957b41902ff 142 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEELi01Z0YWMshLts1v6dCjYWJ2+mwFAml8hwcACgkQ6dCjYWJ2
-+mzOygv/SviFTlpqbwlIFGg+GHuageOc1mmsPOCNg2ndfzMbBpEaSffJNIIND4wt
-HPBecEwRjfhiE6SDJ6MTmLHr7E7Pr0jSM40h1Yy7DZwQxVPJkuNGmHJgkyPkcNnv
-/YUtScNc3q3jlwLCSJYIFCqcR6tE52VTb6XGqtPR0OcBmjy6/ZuOAZfGIr/bWvz9
-1JJjNNFVSHvx9ZPZRe+Rt92ZVK5OIA+FTW5IF9gDlxmNT67bkRJhpcg8F9XdjIM5
-Uw1rzJTWIq1KHk+vyxCRTh7zcSxleaYvFgxLA1SJa5kQ/m+tRa/XvVtXQRl+HH3h
-fEMPnoFLLCU/DNaT8SW4gJy+4DisYmqsACX2u6TxqmMboPjugo3WyYal/2ltX+vp
-q/pT583cn7G6jyHreEn+mo60InKJsH9Z9lfJeMEdrUbDdq2eJ/NYrzJCRnXP+YPT
-oX3uuTRljruEP7JwQriI57rLbWhPqqJpNbYgR1KmWDFOERivXGxd74N03QBPi7Ag
-Cd0kQeDm
-=xnWd
+iQGzBAEBCgAdFiEELi01Z0YWMshLts1v6dCjYWJ2+mwFAmmEl5sACgkQ6dCjYWJ2
++mxiJQwAtV6g9NLGFM75w25oyNiDPNtBsergYWuTzMFQ+bGSzECPj4/a9hb+xRpL
+4WQtrlUdwUyIjOk8hp7dyAKa97ybP0oIifIY8RDA3aTAmU/gaPKGu43rSSy+fPGj
+ro7aMOFLD7uDNx2uNntlxPVryrs6AvnPYTfLbIhP0KK6CAuopTRWMQRKjqoH7PhC
+zy77jbsytw76PSJPAw3CX+qS6v98h67bPkXVaYLwk/+VzEKOY0KkX28LoCRuq3pf
+7DpB+QLqOoFmkFMfUftjE7/BKB3LQCYIWzjt5a0Zf77Wn2d7LC4xxzPJDaauK9B+
+dkbFLk/f+oa0m5UC0qDqhfUVS9ZX7a0K3ebSvcDJchAo4Nwi4Vjprxa+R6AEMomI
+5MDa/MSMSLm5VTMX6qKTxn/S8sDT7y8vhUdfo8Z6SLCwqkhaHlkjLzaLQUHh6T7K
+EBybLjYhbHOSCx77tkCOnBm/QXFDDYW7QTiUPGsIHO6FAhQq3EZobMzeaiGczVm6
+q0kTnKkT
+=Ttku
 -----END PGP SIGNATURE-----
