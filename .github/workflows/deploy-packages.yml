@@ -1,0 +1,135 @@
+name: Deploy Packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Trivy release version, e.g. v0.60.0'
+        required: true
+        type: string
+
+permissions: {}  # all GITHUB_TOKEN permissions denied; workflow uses only ORG_REPO_TOKEN
+
+concurrency:
+  group: deploy-packages
+  cancel-in-progress: false  # never cancel an in-progress deployment
+
+jobs:
+  deploy-packages:
+    name: Deploy rpm/deb packages
+    # TODO: change runner to ubuntu-2404-2core
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout trivy-repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          # TODO: ORG_REPO_TOKEN will be renamed to a dedicated secret.
+          # Required fine-grained PAT permissions:
+          #   resource: aquasecurity/trivy-repo — Contents: Write (for git push)
+          token: ${{ secrets.ORG_REPO_TOKEN }}
+          persist-credentials: true
+
+      - name: Setup git settings
+        run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install rpm reprepro createrepo-c distro-info
+
+      - name: Download release assets
+        env:
+          # TODO: ORG_REPO_TOKEN will be renamed to a dedicated secret.
+          # Required fine-grained PAT permissions:
+          #   aquasecurity/trivy is public — no explicit permissions needed,
+          #   token is used only to avoid unauthenticated API rate limits
+          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+          TRIVY_VERSION: ${{ inputs.version }}
+        run: |
+          gh release download "$TRIVY_VERSION" \
+            --repo aquasecurity/trivy \
+            --pattern "*.rpm" --pattern "*.deb" \
+            --dir dist/
+
+      - name: Create RPM repository
+        env:
+          TRIVY_VERSION: ${{ inputs.version }}
+        run: |
+          function create_common_rpm_repo() {
+            local rpm_path=$1
+            local ARCHES=("x86_64" "aarch64")
+            for arch in "${ARCHES[@]}"; do
+              local prefix=$arch
+              if [ "$arch" == "x86_64" ]; then
+                prefix="64bit"
+              elif [ "$arch" == "aarch64" ]; then
+                prefix="ARM64"
+              fi
+              mkdir -p "${rpm_path}/${arch}"
+              cp dist/*${prefix}.rpm "${rpm_path}/${arch}/"
+              createrepo_c -u https://get.trivy.dev/rpm/ --location-prefix="$TRIVY_VERSION" --update "${rpm_path}/${arch}"
+              rm "${rpm_path}/${arch}/"*${prefix}.rpm
+            done
+          }
+
+          function create_rpm_repo() {
+            local version=$1
+            local rpm_path="rpm/releases/${version}/x86_64"
+            mkdir -p "${rpm_path}"
+            cp dist/*64bit.rpm "${rpm_path}/"
+            createrepo_c -u https://get.trivy.dev/rpm/ --location-prefix="$TRIVY_VERSION" --update "${rpm_path}"
+            rm "${rpm_path}/"*64bit.rpm
+          }
+
+          echo "Create RPM releases for Trivy $TRIVY_VERSION"
+
+          echo "Processing common repository for RHEL/CentOS..."
+          create_common_rpm_repo rpm/releases
+
+          VERSIONS=(5 6 7 8 9)
+          for version in "${VERSIONS[@]}"; do
+            echo "Processing RHEL/CentOS ${version}..."
+            create_rpm_repo "${version}"
+          done
+
+      - name: Commit and push RPM changes
+        env:
+          TRIVY_VERSION: ${{ inputs.version }}
+        run: |
+          git add .
+          git commit -m "Update rpm packages for Trivy $TRIVY_VERSION"
+          git push origin main
+
+      - name: Import GPG key
+        env:
+          GPG_KEY: ${{ secrets.GPG_KEY }}
+        run: echo -e "$GPG_KEY" | gpg --import
+
+      - name: Create DEB repository
+        run: |
+          DEBIAN_RELEASES=$(debian-distro-info --supported)
+          UBUNTU_RELEASES=$(sort -u <(ubuntu-distro-info --supported-esm) <(ubuntu-distro-info --supported))
+
+          cd deb
+
+          for release in generic ${DEBIAN_RELEASES[@]} ${UBUNTU_RELEASES[@]}; do
+            echo "Removing deb package of $release"
+            reprepro -A i386 remove $release trivy
+            reprepro -A amd64 remove $release trivy
+            reprepro -A arm64 remove $release trivy
+          done
+
+          for release in generic ${DEBIAN_RELEASES[@]} ${UBUNTU_RELEASES[@]}; do
+            echo "Adding deb package to $release"
+            reprepro includedeb $release ../dist/*Linux-32bit.deb
+            reprepro includedeb $release ../dist/*Linux-64bit.deb
+            reprepro includedeb $release ../dist/*Linux-ARM64.deb
+          done
+
+      - name: Commit and push DEB changes
+        run: |
+          git add .
+          git commit -m "Update deb packages"
+          git push origin main
