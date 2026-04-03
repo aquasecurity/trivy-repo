@@ -2,7 +2,10 @@
 
 set -eu
 
-DEBIAN_RELEASES=$(debian-distro-info --supported)
+# "sid" and "experimental" are Debian pseudo-distributions, not stable releases.
+# They are included in `debian-distro-info --supported` output but have no reprepro
+# distributions entry and are not meaningful targets for a package repository.
+DEBIAN_RELEASES=$(debian-distro-info --supported | grep -vE "^(experimental|sid)$")
 UBUNTU_RELEASES=$(sort -u <(ubuntu-distro-info --supported-esm) <(ubuntu-distro-info --supported))
 
 cd deb
