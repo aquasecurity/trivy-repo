@@ -8,7 +8,7 @@ on:
         required: true
         type: string
 
-permissions: {}  # all GITHUB_TOKEN permissions denied; workflow uses only ORG_REPO_TOKEN
+permissions: {}  # all GITHUB_TOKEN permissions denied; workflow uses only TRIVY_REPO_DEPLOY_TOKEN
 
 concurrency:
   group: deploy-packages
@@ -23,10 +23,7 @@ jobs:
       - name: Checkout trivy-repo
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
-          # TODO: ORG_REPO_TOKEN will be renamed to a dedicated secret.
-          # Required fine-grained PAT permissions:
-          #   resource: aquasecurity/trivy-repo — Contents: Write (for git push)
-          token: ${{ secrets.ORG_REPO_TOKEN }}
+          token: ${{ secrets.TRIVY_REPO_DEPLOY_TOKEN }}
           persist-credentials: true
 
       - name: Setup git settings
@@ -41,11 +38,8 @@ jobs:
 
       - name: Download release assets
         env:
-          # TODO: ORG_REPO_TOKEN will be renamed to a dedicated secret.
-          # Required fine-grained PAT permissions:
-          #   aquasecurity/trivy is public — no explicit permissions needed,
-          #   token is used only to avoid unauthenticated API rate limits
-          GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
+          # aquasecurity/trivy is public; token is used only to avoid unauthenticated API rate limits
+          GH_TOKEN: ${{ secrets.TRIVY_REPO_DEPLOY_TOKEN }}
           TRIVY_VERSION: ${{ inputs.version }}
         run: |
           gh release download "$TRIVY_VERSION" \
