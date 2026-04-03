@@ -56,51 +56,7 @@ jobs:
       - name: Create RPM repository
         env:
           TRIVY_VERSION: ${{ inputs.version }}
-        run: |
-          function create_common_rpm_repo() {
-            local rpm_path=$1
-            local ARCHES=("x86_64" "aarch64")
-            for arch in "${ARCHES[@]}"; do
-              local prefix=$arch
-              if [ "$arch" == "x86_64" ]; then
-                prefix="64bit"
-              elif [ "$arch" == "aarch64" ]; then
-                prefix="ARM64"
-              fi
-              mkdir -p "${rpm_path}/${arch}"
-              cp dist/*${prefix}.rpm "${rpm_path}/${arch}/"
-              createrepo_c -u https://get.trivy.dev/rpm/ --location-prefix="$TRIVY_VERSION" --update "${rpm_path}/${arch}"
-              rm "${rpm_path}/${arch}/"*${prefix}.rpm
-            done
-          }
-
-          function create_rpm_repo() {
-            local version=$1
-            local rpm_path="rpm/releases/${version}/x86_64"
-            mkdir -p "${rpm_path}"
-            cp dist/*64bit.rpm "${rpm_path}/"
-            createrepo_c -u https://get.trivy.dev/rpm/ --location-prefix="$TRIVY_VERSION" --update "${rpm_path}"
-            rm "${rpm_path}/"*64bit.rpm
-          }
-
-          echo "Create RPM releases for Trivy $TRIVY_VERSION"
-
-          echo "Processing common repository for RHEL/CentOS..."
-          create_common_rpm_repo rpm/releases
-
-          VERSIONS=(5 6 7 8 9)
-          for version in "${VERSIONS[@]}"; do
-            echo "Processing RHEL/CentOS ${version}..."
-            create_rpm_repo "${version}"
-          done
-
-      - name: Commit and push RPM changes
-        env:
-          TRIVY_VERSION: ${{ inputs.version }}
-        run: |
-          git add .
-          git commit -m "Update rpm packages for Trivy $TRIVY_VERSION"
-          git push origin main
+        run: ci/deploy-rpm.sh "$TRIVY_VERSION"
 
       - name: Import GPG key
         env:
@@ -108,28 +64,4 @@ jobs:
         run: echo -e "$GPG_KEY" | gpg --import
 
       - name: Create DEB repository
-        run: |
-          DEBIAN_RELEASES=$(debian-distro-info --supported)
-          UBUNTU_RELEASES=$(sort -u <(ubuntu-distro-info --supported-esm) <(ubuntu-distro-info --supported))
-
-          cd deb
-
-          for release in generic ${DEBIAN_RELEASES[@]} ${UBUNTU_RELEASES[@]}; do
-            echo "Removing deb package of $release"
-            reprepro -A i386 remove $release trivy
-            reprepro -A amd64 remove $release trivy
-            reprepro -A arm64 remove $release trivy
-          done
-
-          for release in generic ${DEBIAN_RELEASES[@]} ${UBUNTU_RELEASES[@]}; do
-            echo "Adding deb package to $release"
-            reprepro includedeb $release ../dist/*Linux-32bit.deb
-            reprepro includedeb $release ../dist/*Linux-64bit.deb
-            reprepro includedeb $release ../dist/*Linux-ARM64.deb
-          done
-
-      - name: Commit and push DEB changes
-        run: |
-          git add .
-          git commit -m "Update deb packages"
-          git push origin main
+        run: ci/deploy-deb.sh
