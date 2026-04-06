@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Trivy release version, e.g. v0.60.0'
+        description: 'Trivy release version with v prefix, e.g. v0.60.0'
         required: true
         type: string
 
