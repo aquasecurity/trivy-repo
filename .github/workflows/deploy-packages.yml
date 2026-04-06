@@ -1,0 +1,60 @@
+name: Deploy Packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Trivy release version with v prefix, e.g. v0.60.0'
+        required: true
+        type: string
+
+permissions: {}  # all GITHUB_TOKEN permissions denied; workflow uses only TRIVY_REPO_DEPLOY_TOKEN
+
+concurrency:
+  group: deploy-packages
+  cancel-in-progress: false  # never cancel an in-progress deployment
+
+jobs:
+  deploy-packages:
+    name: Deploy rpm/deb packages
+    runs-on: ubuntu-2404-2core
+    steps:
+      - name: Checkout trivy-repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          token: ${{ secrets.TRIVY_REPO_DEPLOY_TOKEN }}
+          persist-credentials: true
+
+      - name: Setup git settings
+        run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install rpm reprepro createrepo-c distro-info
+
+      - name: Download release assets
+        env:
+          # aquasecurity/trivy is public; GITHUB_TOKEN is used only to raise the API rate limit
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRIVY_VERSION: ${{ inputs.version }}
+        run: |
+          gh release download "$TRIVY_VERSION" \
+            --repo "$GITHUB_REPOSITORY_OWNER/trivy" \
+            --pattern "*.rpm" --pattern "*.deb" \
+            --dir dist/
+
+      - name: Create RPM repository
+        env:
+          TRIVY_VERSION: ${{ inputs.version }}
+        run: ci/deploy-rpm.sh "$TRIVY_VERSION"
+
+      - name: Import GPG key
+        env:
+          GPG_KEY: ${{ secrets.GPG_KEY }}
+        run: echo -e "$GPG_KEY" | gpg --import
+
+      - name: Create DEB repository
+        run: ci/deploy-deb.sh
