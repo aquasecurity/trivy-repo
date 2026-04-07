@@ -9,8 +9,8 @@ TRIVY_VERSION=$1
 #   $1 - glob for RPMs to include from ../dist (e.g., "*64bit.rpm")
 #   $2 - target repo path where repodata is maintained (e.g., rpm/releases/7/x86_64)
 function merge_repo_with_new_packages () {
-        rpm_glob=$1
-        rpm_path=$2
+        local rpm_glob=$1
+        local rpm_path=$2
 
         mkdir -p "$rpm_path"
 
@@ -44,7 +44,7 @@ function merge_repo_with_new_packages () {
 }
 
 function create_common_rpm_repo() {
-  rpm_path=$1
+  local rpm_path=$1
 
   ARCHES=("x86_64" "aarch64")
   for arch in "${ARCHES[@]}"; do
