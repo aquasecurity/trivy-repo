@@ -46,15 +46,15 @@ jobs:
             --pattern "*.rpm" --pattern "*.deb" \
             --dir dist/
 
-      - name: Create RPM repository
-        env:
-          TRIVY_VERSION: ${{ inputs.version }}
-        run: ci/deploy-rpm.sh "$TRIVY_VERSION"
-
-      - name: Import GPG key
-        env:
-          GPG_KEY: ${{ secrets.GPG_KEY }}
-        run: echo -e "$GPG_KEY" | gpg --import
-
-      - name: Create DEB repository
-        run: ci/deploy-deb.sh
+#      - name: Create RPM repository
+#        env:
+#          TRIVY_VERSION: ${{ inputs.version }}
+#        run: ci/deploy-rpm.sh "$TRIVY_VERSION"
+#
+#      - name: Import GPG key
+#        env:
+#          GPG_KEY: ${{ secrets.GPG_KEY }}
+#        run: echo -e "$GPG_KEY" | gpg --import
+#
+#      - name: Create DEB repository
+#        run: ci/deploy-deb.sh
