@@ -11,6 +11,7 @@ TRIVY_VERSION=$1
 function merge_repo_with_new_packages () {
   local rpm_glob=$1
   local rpm_path=$2
+  local base_dir rpm_tmp rpm_old
 
   mkdir -p "$rpm_path"
 
@@ -45,8 +46,8 @@ function merge_repo_with_new_packages () {
 
 function create_common_rpm_repo() {
   local rpm_path=$1
-
-  ARCHES=("x86_64" "aarch64")
+  local -a ARCHES=("x86_64" "aarch64")
+  local arch prefix
   for arch in "${ARCHES[@]}"; do
     prefix=$arch
     if [ "$arch" == "x86_64" ]; then
@@ -60,8 +61,8 @@ function create_common_rpm_repo() {
 }
 
 function create_rpm_repo() {
-  version=$1
-  rpm_path="rpm/releases/${version}/x86_64"
+  local version=$1
+  local rpm_path="rpm/releases/${version}/x86_64"
 
   merge_repo_with_new_packages "*64bit.rpm" "$rpm_path"
 }
