@@ -24,6 +24,7 @@ for release in generic ${DEBIAN_RELEASES[@]} ${UBUNTU_RELEASES[@]}; do
   reprepro includedeb $release ../dist/*Linux-ARM64.deb
 done
 
+# git runs inside `deb/`, so "git add ." stages only `deb/` contents.
 git add .
 git commit -m "Update deb packages"
 git push origin main

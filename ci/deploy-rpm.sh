@@ -43,6 +43,6 @@ for version in "${VERSIONS[@]}"; do
   create_rpm_repo "${version}"
 done
 
-git add .
+git add rpm/
 git commit -m "Update rpm packages for Trivy ${TRIVY_VERSION}"
 git push origin main
