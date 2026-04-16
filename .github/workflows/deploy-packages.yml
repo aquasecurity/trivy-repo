@@ -54,7 +54,7 @@ jobs:
       - name: Import GPG key
         env:
           GPG_KEY: ${{ secrets.GPG_KEY }}
-        run: echo -e "$GPG_KEY" | gpg --import
+        run: echo -e "$GPG_KEY" | gpg --import --batch --no-tty
 
       - name: Create DEB repository
         run: ci/deploy-deb.sh
