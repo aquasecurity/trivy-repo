@@ -1,0 +1,5 @@
+Component: main
+Origin: aquasecurity.github.io/trivy-repo/deb
+Label: github.io/aquasecurity
+Architecture: i386
+Description: Trivy repository
