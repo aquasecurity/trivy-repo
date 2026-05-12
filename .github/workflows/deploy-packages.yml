@@ -8,7 +8,7 @@ on:
         required: true
         type: string
 
-permissions: {}  # all GITHUB_TOKEN permissions denied; workflow uses only TRIVY_REPO_DEPLOY_TOKEN
+permissions: {}  # GITHUB_TOKEN has no repo permissions; checkout/push uses a GitHub App installation token
 
 concurrency:
   group: deploy-packages
@@ -19,11 +19,20 @@ jobs:
     name: Deploy rpm/deb packages
     runs-on: ubuntu-2404-2core
     steps:
+      - name: Generate token for trivy-repo
+        id: trivy-repo-token
+        uses: actions/create-github-app-token@1b10c78c7865c340bc4f6099eb2f838309f1e8c3 # v3.1.1
+        with:
+          client-id: ${{ secrets.REPO_TRIVY_REPO_WRITE_GH_APP_CLIENT_ID }}
+          private-key: ${{ secrets.REPO_TRIVY_REPO_WRITE_GH_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+
       - name: Checkout trivy-repo
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
-          token: ${{ secrets.TRIVY_REPO_DEPLOY_TOKEN }}
-          persist-credentials: true
+          token: ${{ steps.trivy-repo-token.outputs.token }}
+          persist-credentials: true  # ci/deploy-*.sh runs git push
 
       - name: Setup git settings
         run: |
