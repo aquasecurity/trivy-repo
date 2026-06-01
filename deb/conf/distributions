@@ -168,6 +168,14 @@ SignWith: 825AD9036F7C850E6A6FED4935B8ACA44FD9CA9F
 
 Origin: aquasecurity.github.io/trivy-repo/deb
 Label: github.io/aquasecurity
+Codename: stonking
+Architectures: i386 amd64 arm64
+Components: main
+Description: Trivy repository
+SignWith: 825AD9036F7C850E6A6FED4935B8ACA44FD9CA9F
+
+Origin: aquasecurity.github.io/trivy-repo/deb
+Label: github.io/aquasecurity
 Codename: generic
 Architectures: i386 amd64 arm64
 Components: main
