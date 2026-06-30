@@ -1,15 +1,15 @@
 Package: trivy
-Version: 0.71.2
+Version: 0.72.0
 Architecture: i386
 Maintainer: Aqua Security <oss@aquasec.com>
-Installed-Size: 152325
+Installed-Size: 152425
 Homepage: https://github.com/aquasecurity
 Priority: optional
 Section: 
-Filename: pool/main/t/trivy/trivy_0.71.2_i386.deb
-Size: 46158708
-SHA256: de89bd18670215c60944cca8d3114e6d1f5a37f02354f5627e868494b09825ea
-SHA1: 147e576c2fd506e839515fb6cd66c83715f6351c
-MD5sum: c127e8d30fd17ca5456dd73728b6df88
+Filename: pool/main/t/trivy/trivy_0.72.0_i386.deb
+Size: 46015052
+SHA256: 5fdcce4c32ece1e9b50c9054f5716c7ab717523bcd7f6ad3f7c42d66e264957c
+SHA1: b7c3fe1c92e894cde95f3e9b7adb6380b10bf426
+MD5sum: 3902f9a640fea35838287b518e0f7b20
 Description: A Fast Vulnerability Scanner for Containers
 
